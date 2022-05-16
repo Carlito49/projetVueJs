@@ -7,7 +7,7 @@
     </div>
 </template>
 
-<script>
+<script lang="ts">
 
 import FormComponent from '../components/FormComponent.vue';
 import HeaderComponent from '../components/HeaderComponent.vue';
