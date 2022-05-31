@@ -24,19 +24,20 @@
 </form>
 </template>
 
-<script>
+<script lang="ts">
     import router from '@/router';
+    import { Component, Vue, Prop } from 'vue-property-decorator';
 
     export default {
         data: () => ({
-            login: "",
-            password: ""
+            
         }),
         props: {
-            
+            login: String,
+            password: String
         },
         methods: {
-            checkLogin() {
+            checkLogin(): void {
                 if(this.login === "admin" && this.password === "admin") {
                     router.push({ path: '/about' })
                 }
